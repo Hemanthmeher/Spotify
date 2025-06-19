@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Categories</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+       background: url('background_g.jpeg') no-repeat center center/cover;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .album-card {
+      background: rgba(255, 0, 89, 0.114);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .album-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .album-img {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .album-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color:aliceblue;
+    }
+
+    .album-description {
+      font-size: 15px;
+       color:aliceblue;
+      margin-bottom: 15px;
+    }
+
+    .play-btn {
+      display: inline-block;
+      background-color: #e01c71;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .play-btn:hover {
+      background-color: #c3135f;
+    }
+
+    .footer-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .footer-btn button {
+      padding: 12px 30px;
+      font-size: 16px;
+      background: #fcf9fa;
+      border: none;
+      border-radius: 6px;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .footer-btn button:hover {
+      background: #fe1d68;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 style="color:white;">🎶 Choose Your Vibe</h1>
+
+    <div class="album-grid">
+      
+      <!-- Romantic Album -->
+      <div class="album-card">
+        <img src="romantic.jpeg" alt="Romantic" class="album-img" />
+        <div class="album-title">Romantic Vibes 💖</div>
+        <div class="album-description">Let your heart sway to melodies of love, passion, and timeless romance.</div>
+        <a href="romantic.html"><button class="play-btn">Click to Enjoy</button></a>
+      </div>
+
+      <!-- Mass Beat Album -->
+      <div class="album-card">
+        <img src="mass.jpeg" alt="Mass Beat" class="album-img" />
+        <div class="album-title">Mass Beat Energy 🔥</div>
+        <div class="album-description">Turn up the volume! Feel the thrill of heavy beats, street swag, and dance energy.</div>
+        <a href="mass.html"><button class="play-btn">Click to Enjoy</button></a>
+      </div>
+
+      <!-- English Hits Album -->
+     <div class="album-card">
+  <img src="melody.jpeg" alt="Melody" class="album-img" />
+  <div class="album-title"> Melodies 🎶</div>
+  <div class="album-description">Relax and unwind with soft tunes, instrumental rhythms, and peaceful harmonies.</div>
+  <a href="melody.html"><button class="play-btn">Click to Enjoy</button></a>
+</div>
+
+    </div>
+
+    <div class="footer-btn">
+      <button onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+  </div>
+
+</body>
+</html>
